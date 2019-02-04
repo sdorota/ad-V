@@ -38,6 +38,7 @@ $(document).ready(function() {
         "background-image",
         "linear-gradient(135deg , #7f38f5, #1bd4db, #7f38f5)"
       );
+      $(this).css("transition-duration", "1s");
       $(this).css("border", "none");
     },
     function() {
@@ -51,15 +52,14 @@ $(document).ready(function() {
     function() {
       $(this).css(
         "background-image",
-        "linear-gradient(135deg, #c165dd 0%, #5c27fe 100%)"
-      );
+        "linear-gradient(135deg, #c165dd 0%, #5c27fe 100%)");
+      $(this).css('transition-duration', '1s');
       $(".template--overflow--2").css("background-color", "transparent");
       $(".template--overflow--2").css("border", "none");
-      $(".template--img--b2")
-        .removeClass("b2")
-        .addClass("b3--hover");
+      $(".template--img--b2").removeClass("b2").addClass("b3--hover");
       $(".template--title--2").css("color", "#ffffff");
       $(".template--text--2").css("color", "#c4c4c4");
+      // $(this).css('transition-delay', '4s');
     },
     function() {
       $(this).css("background-image", "none");
@@ -78,6 +78,7 @@ $(document).ready(function() {
     function() {
       $(this).css("background-color", "transparent");
       $(this).css("color", "#ffffff");
+      $(this).css("transition-duration", "2s");
     },
     function() {
       $(this).css("background-color", "#ffffff");
