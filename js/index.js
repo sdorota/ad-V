@@ -1,8 +1,5 @@
 $(document).ready(function() {
-  $('.owl-item').addClass('flex');
-});
-
-$(".owl-carousel").owlCarousel({
+  $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 0,
   navigationText: [
@@ -15,11 +12,11 @@ $(".owl-carousel").owlCarousel({
       items: 1,
       nav: false,
     },
-    600: {
-      items: 3,
+    800: {
+      items: 2,
       nav: false
     },
-    1000: {
+    1200: {
       items: 3,
       nav: false,
       loop: true
@@ -27,17 +24,14 @@ $(".owl-carousel").owlCarousel({
   }
 });
 
-$(document).ready(function() {
   var owl = $(".owl-carousel");
   owl.owlCarousel();
   // Go to the next item
   $(".owl-next").click(function() {
     owl.trigger("next.owl.carousel");
   });
-});
 
 // hover template--item--1
-$(document).ready(function() {
   $(".template--item--1").hover(
     function() {
       $(this).css(
@@ -51,10 +45,8 @@ $(document).ready(function() {
       $(this).css("border", "2px solid #e8e8e8");
     }
   );
-});
 
 // hover template--item--2
-$(document).ready(function() {
   $(".template--item--2").hover(
     function() {
       $(this).css(
@@ -81,7 +73,6 @@ $(document).ready(function() {
     }
   );
 
-
 // hover button
   $(".template--button__content").hover(
     function() {
@@ -93,4 +84,5 @@ $(document).ready(function() {
       $(this).css("color", "#6f32f8");
     }
   );
+  $('.owl-item').addClass('flex');
 });

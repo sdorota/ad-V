@@ -1,0 +1,30 @@
+@media all and (max-width: 1200px) {
+  .template--outer .template--navigation .template--arrow--1 {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .template--outer .template--navigation {
+    position: relative;
+    padding: 10px;
+    top: -20px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .template--outer .template {
+    justify-content: center;
+    display: flex;
+    .owl-item {
+      max-width: 320px;
+      margin-right: 15px;
+      .template--item .template--item--inner {
+        padding: 0;
+      }
+      .template--item--title {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+}
