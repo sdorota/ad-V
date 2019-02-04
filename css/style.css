@@ -10,11 +10,11 @@ body {
 .template--outer {
   position: relative;
   display: flex;
-  flex-direction: column;
   margin: auto;
-  min-height: auto;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  min-height: auto; }
   .template--outer .template {
     background-color: #ffffff;
     padding: 20px;
@@ -31,7 +31,11 @@ body {
       background-color: #ffffff;
       border: 2px solid #e8e8e8;
       display: flex;
-      justify-content: center; }
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      align-items: center; }
       .template--outer .template .template--item .template--outer--1 {
         background-color: #ffffff;
         border-radius: 5px;
@@ -40,34 +44,30 @@ body {
         width: 100%;
         padding: 20px; }
         .template--outer .template .template--item .template--item--inner .template--overflow {
-          background-color: white;
+          background-color: #ffffff;
           display: flex;
+          margin: auto;
+          justify-content: center;
+          align-content: center;
           flex-direction: column;
-          align-items: center;
-          text-align: center;
           border: 1px solid #ffffff;
           border-radius: 10px; }
           .template--outer .template .template--item .template--item--inner .template--overflow .template--img {
             width: 355px;
-            height: 180px; }
+            height: 180px;
+            background-position: center;
+            background-repeat: no-repeat; }
           .template--outer .template .template--item .template--item--inner .template--overflow .b1 {
             background-color: #4b4b4b;
             background-image: url(../img/Layer2.png);
-            background-position: center;
             background-size: cover;
-            background-repeat: no-repeat; }
+            border-radius: 10px 10px 0 0; }
           .template--outer .template .template--item .template--item--inner .template--overflow .b2 {
-            background-image: url(../img/coderClan-02.png);
-            background-position: center;
-            background-repeat: no-repeat; }
+            background-image: url(../img/coderClan-02.png); }
           .template--outer .template .template--item .template--item--inner .template--overflow .b3 {
-            background-image: url(../img/coderClan-03.png);
-            background-position: center;
-            background-repeat: no-repeat; }
+            background-image: url(../img/coderClan-03.png); }
           .template--outer .template .template--item .template--item--inner .template--overflow .b3--hover {
             background-image: url(../img/coderClan-03.png);
-            background-position: center;
-            background-repeat: no-repeat;
             transform: scale(1.2); }
           .template--outer .template .template--item .template--item--inner .template--overflow .template--item--title {
             margin: 0;
@@ -76,8 +76,11 @@ body {
             color: #4f4e4d;
             font-family: "Myriad Pro";
             font-weight: bold; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--text__1 {
+            display: flex;
+            justify-content: left; }
           .template--outer .template .template--item .template--item--inner .template--overflow .template--title--white {
-            color: white; }
+            color: #ffffff; }
           .template--outer .template .template--item .template--item--inner .template--overflow .template--item--text {
             overflow: hidden;
             margin: 0;
@@ -86,13 +89,17 @@ body {
             color: #8c8c8c;
             font-family: "Myriad Pro";
             text-align: center; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--text__1 {
+            text-align: left; }
           .template--outer .template .template--item .template--item--inner .template--overflow .template--text--3 {
             color: #c4c4c4; }
         .template--outer .template .template--item .template--item--inner .template--overflow--3 {
           background-color: transparent;
           border: transparent; }
       .template--outer .template .template--item .template--item--inner1 {
-        padding: 15px; }
+        padding: 15px;
+        text-align: left;
+        align-items: flex-start; }
     .template--outer .template .template--item--1 {
       padding: 5px; }
     .template--outer .template .template--item--3 {
@@ -123,8 +130,11 @@ body {
       border-radius: 50%;
       background-color: #dcdcdb;
       display: flex;
+      margin: auto;
       justify-content: center;
-      align-self: center;
+      align-content: center;
+      text-align: center;
+      align-items: center;
       text-decoration: none; }
       .template--outer .template--navigation .template--arrow .template--arrow--inner {
         color: #ffffff;
@@ -145,21 +155,17 @@ body {
       font-size: 25px;
       color: #6f32f8;
       font-family: "Myriad Pro";
-      text-align: center;
-      align-items: center;
       background: #ffffff;
       border-radius: 8px;
-      display: flex;
-      justify-content: center;
       height: 100%;
       transition: background 0.5s ease;
-      width: 100%; }
-
-.b3--hover {
-  background-image: url(../img/coderClan-03.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: scale(1.2); }
+      width: 100%;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      align-items: center; }
 
 .flex {
   display: flex;
