@@ -11,20 +11,3 @@
   }
 }
 
-@media all and (max-width: 400px) {
-  .template--outer .template {
-    justify-content: center;
-    display: flex;
-    .owl-item {
-      max-width: 320px;
-      margin-right: 15px;
-      .template--item .template--item--inner {
-        padding: 0;
-      }
-      .template--item--title {
-        font-size: 20px;
-        line-height: 25px;
-      }
-    }
-  }
-}
