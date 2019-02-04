@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+  font-style: sans-serif; }
+
+.template--outer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: auto;
+  align-items: center;
+  justify-content: center; }
+  .template--outer .template {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .template--outer .template .template--item {
+      width: 395px;
+      height: 388px;
+      border-radius: 10px;
+      box-shadow: 0 0 21px rgba(0, 0, 0, 0.13);
+      background-color: #ffffff;
+      border: 2px solid #e8e8e8;
+      display: flex;
+      justify-content: center; }
+      .template--outer .template .template--item .template--outer--1 {
+        background-color: #ffffff;
+        border-radius: 5px;
+        height: 100%; }
+      .template--outer .template .template--item .template--item--inner {
+        width: 100%;
+        padding: 20px; }
+        .template--outer .template .template--item .template--item--inner .template--overflow {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          border: 1px solid #ffffff;
+          border-radius: 10px; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--img {
+            width: 355px;
+            height: 180px; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .b1 {
+            background-color: #4b4b4b;
+            background-image: url(../img/Layer2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .b2 {
+            background-image: url(../img/coderClan-02.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .b3 {
+            background-image: url(../img/coderClan-03.png);
+            background-position: center;
+            background-repeat: no-repeat; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .b3--hover {
+            background-image: url(../img/coderClan-03.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: scale(1.2); }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--item--title {
+            margin: 0;
+            font-size: 25px;
+            line-height: 50px;
+            color: #4f4e4d;
+            font-family: "Myriad Pro";
+            font-weight: bold; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--title--white {
+            color: white; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--item--text {
+            overflow: hidden;
+            margin: 0;
+            font-size: 16px;
+            line-height: 30px;
+            color: #8c8c8c;
+            font-family: "Myriad Pro";
+            text-align: center; }
+          .template--outer .template .template--item .template--item--inner .template--overflow .template--text--3 {
+            color: #c4c4c4; }
+        .template--outer .template .template--item .template--item--inner .template--overflow--3 {
+          background-color: transparent;
+          border: transparent; }
+      .template--outer .template .template--item .template--item--inner1 {
+        padding: 15px; }
+    .template--outer .template .template--item--1 {
+      padding: 5px; }
+    .template--outer .template .template--item--3 {
+      background-image: url(../img/Layer3.png);
+      position: relative;
+      z-index: 1; }
+      .template--outer .template .template--item--3::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0.85;
+        background-image: linear-gradient(0deg, #2414df 0%, #461af2 100%);
+        position: absolute;
+        z-index: -50;
+        border: 1px solid #2414df;
+        border-radius: 10px; }
+  .template--outer .template--navigation {
+    position: absolute;
+    width: 64%;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+    margin: auto; }
+    .template--outer .template--navigation .template--arrow {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #dcdcdb;
+      border-radius: 50%;
+      background-color: #dcdcdb;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      text-decoration: none; }
+      .template--outer .template--navigation .template--arrow .template--arrow--inner {
+        color: #ffffff;
+        font-size: 26px;
+        line-height: 26px; }
+  .template--outer .template--button {
+    width: 280px;
+    height: 62px;
+    background-color: #ffffff;
+    background-image: linear-gradient(135deg, #c165dd 0%, #5c27fe 100%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+    position: relative;
+    text-decoration: none;
+    z-index: 2; }
+    .template--outer .template--button .template--button__content {
+      font-size: 25px;
+      color: #6f32f8;
+      font-family: "Myriad Pro";
+      text-align: center;
+      align-items: center;
+      background: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      transition: background 0.5s ease;
+      width: 100%; }
+
+.b3--hover {
+  background-image: url(../img/coderClan-03.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.2); }
+
+.flex {
+  display: flex;
+  justify-content: center; }
+
+.item {
+  overflow-y: auto !important;
+  overflow-x: hidden; }
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+  border-radius: 1px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 1px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent; }
